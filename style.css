@@ -51,7 +51,7 @@ a {
 
 
 /*Titres*/
-h1, h2, h4 {
+h1, h2, {
   margin: 0;
     text-transform: uppercase;
     text-align: left;
@@ -69,8 +69,9 @@ h2 {
   color: #737373;
 }
 
-h4 {
+h5 {
   color: #455a64;
+  text-align: right;
 }
 
 li
