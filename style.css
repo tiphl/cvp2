@@ -245,7 +245,7 @@ header .loisirs
 
 /*   Format mobile    */
 
-@media screen and (max-device-width: 479px) 
+@media screen and (max--width: 767px) 
 {
 
   /*Général*/
@@ -293,7 +293,7 @@ header .loisirs
 
 /*     Format tablette      */
 
-@media screen and (min-width: 480px) 
+@media screen and (min-width: 768px) and (max-width: 1023)
 
 {
 
@@ -343,7 +343,7 @@ header .loisirs
 
 /*     Format desktop      */
 
-@media screen and (min-width: 1080px) 
+@media screen and (min-width: 1024px) 
 
 {
 
