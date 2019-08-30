@@ -7,51 +7,31 @@ body {
   color: #737373;
 }
 
-.row
+.container
 {
-  margin: auto;
-
+width: 100%;
 }
-
-#block1
-{
-  background-color:#263238; 
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 40px;
-
-}
-
-#focus{
-border-bottom: thin solid #9e9e9e;
-
-}
-
 
 /*Icones*/
-#block2 i
-{
-  font-size: 25px;
-  color: #455a64;
-
-}
-
-#block1 i
-{
-  background-color:#737373;
-  border-radius: 100px; 
-  border: 5px solid #737373;
-
+.fas {
+  font-size: 30px;
 }
 
 /*Liens*/
-a {
-  background-color: #455a64;
+a 
+{
+  color: #737373;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 
+
+
+
+
 /*Titres*/
-h1, h2, {
+h1, h2, h3 {
   margin: 0;
     text-transform: uppercase;
     text-align: left;
@@ -63,98 +43,100 @@ h1 {
   color: #9e9e9e;
 }
 
+#focus
+{
+border-bottom: thin solid #9e9e9e;
+}
+
 h2 {
   width: 100%;
   font-weight: normal;
-  color: #737373;
-}
-
-h5 {
   color: #455a64;
-  text-align: right;
 }
 
-li
-{
-  color:#455a64; 
+
+
+h3 {
+
+  color: #455a64;
 }
 
-#block1 h2
-{
-  background-color: #737373;
-  text-align: center;
-  color: #263238;
-}
-
-#block2 h2
-{
-  border-bottom: thin solid #455a64;
-}
 
 /*Paragraphes*/
 p{
   margin: 0;
   line-height: 23px;
   text-align: justify;
-  color: #9e9e9e;
 }
 
+
 /*Sections*/
-header p, section {
+#block1 p, section {
   padding: 15px;
 }
 
-section .title {
+#block2 section .title {
   display: flex;
-  align-items: center;
   width: 100%;
-  padding-bottom: 2%;
-  border-bottom: 1px solid #455a64;
+  border-bottom: 1px solid #9e9e9e;
 }
 
-section .title h2 {
+#block2 section .title h2 {
   padding-left: 10px;
-  line-height: 25px;
+
 }
+
+
+
 
 /*Listes*/
 ul {
   padding: 10px;
-  margin: 0;
+    margin: 0;
 }
 
 
 /*Formations & Xp Pro*/
-#block2 .dates {
+.dates {
   font-size: 16px;
-  text-align: left;
 }
 
-#block2 .infos {
+.ou_quoi {
   margin-bottom: 15px;
-
-  text-align: right;
+  line-height: 20px;
 }
 
 
 /* ---------------------------------------- */
-/* == HEADER */
+/* == Block1 */
 /*---------------------------------------- */
 
-#block2 header {
+#block1 {
   padding-top: 20px;
     margin-bottom: 20px;
-
+  background-color: #263238;
 }
 
-#block2 h2 {
+#block1 h2 {
+  background-color: #737373;
+  text-align: center;
+  color: #263238;
+}
 
-  text-align: left;
-  color: #455a64;
+#block1 li
+{
+  list-style-type: none;
+}
+
+#block1 i
+{
+  background-color:#737373;
+  border-radius: 100px; 
+  border: 5px solid #737373;
 }
 
 /*Photo d'identité*/
-#block1 img{
+.id_img{
   display: flex;
   justify-content: center;
   width: 230px;
@@ -165,49 +147,136 @@ ul {
   border: 5px solid #737373;
 }
 
+.id_img img{
+  width: 100%;
+  height: auto;
+}
 
 /*Identité*/
-#block1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0 35px 0;
-  line-height: 30px;
-}
 
-#block1 p{
-  padding: 20px;
-  margin-bottom: 20px;
+.identity p{
+  padding: 0;
 }
-
-#block2 
-{
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0 35px 0;
-  line-height: 30px;
-}
-
 
 h1 span{
   color: #455a64;
-  padding-left: 10px;
+}
+
+.contenu .identity {
+  display: none;
+}
+
+/*Contact*/
+ .contact {
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+
+/*Loisirs*/
+.loisirs {
+  display: none;
 }
 
 
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+/* ==BLOCK2== */
+
+#block2 i
+{
+  font-size: 25px;
+  color: #455a64;
+
 }
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+
+/* ---------------------------------------- */
+/* == SECTION EXPERIENCE PROFESSIONNELLE */
+/*---------------------------------------- */
+
+#exp_pro .descr {
+  margin-bottom: 25px;
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+
+
+/* ---------------------------------------- */
+/* == RECOMMANDATION*/
+/*---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* == MEDIA QUERIES */
+/*---------------------------------------- */
+
+/*     Format tablette      */
+
+
+
+  /*Recommandation*/
+
+
+
+/*     Format desktop      */
+
+@media screen and (min-width: 1080px) {
+
+  /*Global*/
+  body {
+    display: flex;
+    justify-content: flex-start;
   }
-}
+
+  .contenu {
+    width: 75%;
+    padding: 50px;
+  }
+
+  section .title {
+    padding: 0;
+  }
+
+  .container_list {
+    display:flex;
+    width: 100%;
+  }
+
+  .container_list .dates {
+    width: 35%;
+  }
+
+  .container_list .descr_list {
+    width: 65%;
+  }
+
+  /*Header*/
+  #block1 {
+    position: relative;
+    width: 25%;
+    padding-top: 45px;
+  }
+
+  #block1 .id_img {
+    margin-bottom: 45px;
+  }
+
+  #block1 .identity {
+    display: none;
+  }
+
+  #block1 .loisirs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  /*identité*/
+  .contenu .identity {
+    display: block;
+      padding: 65px 0 75px 0;
+  }
+
+
+
+
+
