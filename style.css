@@ -1,3 +1,5 @@
+
+
 /* ---------------------------------------- */
 /* == Général == */
 /*---------------------------------------- */
@@ -414,6 +416,12 @@ justify-content: center;
     width: 100%;
   }
 
+  header .content_loisirs 
+  {
+    display: flex;
+    justify-content: center;
+  }
+
 
   /*identité*/
   .content .identity 
@@ -421,9 +429,5 @@ justify-content: center;
     display: block;
       padding: 65px 0 75px 0;
   }
-
-
-
-
 
 }
