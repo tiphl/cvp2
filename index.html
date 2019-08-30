@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Cv Tiphaine Lallier</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script src="https://kit.fontawesome.com/4156522561.js"></script>
 		<meta name="description" content="Développeuse web en formation !">
 
@@ -15,22 +14,18 @@
 
 	<body>
 
-		<div class="container">
+		<header>
 
-			<div class="row">
+			<div class="identity_img" >
 
-				<div id="block1" class="col-md-3">
+				<img src="img/tiphaine_lallier_mini.jpg" alt="Photo identité">
 
-					<header>
-						<div class="id_img" >
-						<img src="img/tiphaine_lallier_mini.jpg" alt="Photo identité"><br />
-						</div>	
-					</header>
+			</div>	
 
-        			 <!-- contact -->	
-          			<h2>Contact</h2>
+        		<!-- contact -->	
+          		<h2>Contact</h2>
 
-          			<div class="contact">
+          			<section class="contact">
           				<ul>
           					
           					<li>Adresse:<br />
@@ -40,59 +35,77 @@
           					<li>Mail:<br />
 							<a target="_blank" href="mailto:tiphainelallier@hotmail.fr">tiphainelallier@hotmail.fr</a></li><br />
 	          				<li>Site internet:<br />
-							...</li>
+							...</li><br />
+
           				</ul>
-					</div>
-					
-					
-    				</p>
+					</section>
+
 
     				 <!-- a propos -->
-					<h2>A propos</h2>
+    				
+						<h2>A propos</h2>
 
-					<section class="about">					
-    				Née le 27 juin 1983</br>
-					Permis B, possède une voiture<br />
-					Secrétaire-bénévole,Fort aux Fresques(57)<br />
-					Reconstitution historique:<br /> 
-					viking<br />
-					WW2 (infirmière française et allemande).
+						<section class="about">
+										
+    					<p>Née le 27 juin 1983.<br />
+
+						Permis B, possède un véhicule.<br />
+
+						<ul>Depuis décembre 2016, je suis bénévole dans un ouvrage de la Ligne Maginot: le Fort aux fresques de Hestroff (57). Très active au sein de l'association, je suis devenue depuis mars 2019, la secrétaire.<br />
+
+						Ayant beaucoup d'intérêt pour l'Histoire, je fais de la reconstitution historique depuis 2015. Le fait d'être couturière m'a grandement aidé.<br />
+						Périodes de reconstitution historique représentées:
+								<li>viking, artisane.</li>
+								<li>WW2 (infirmière française et allemande).</li>
+							</ul>
+
+							J'aime la création et les défis.<br /> 
+						C'est pour cela que j'ai décidé de faire une reconversion professionnelle, avec l'aide d'Open Classrooms, pour devenir "développeur intégrateur web". J'avais déjà quelques notions de HTML, en pratiquant le JDR sur des forums RPG.
+						</p>
+					
+					 
     				</section>
 
     				<!-- Loisirs -->
     				<h2>Loisirs</h2> 
     					
-    				<secion class="Loisirs"> 
+    				<section class="Loisirs"> 
     				<!-- icones -->	
+
+    					<div class="content_loisirs">
     					<p><i class="fas fa-camera icone-loisir"></i>
     					<i class="fas fa-book-open icone-loisir"></i>
     					<i class="fas fa-music icone-loisir"></i>
     					<i class="fas fa-film icone-loisir"></i></p>
     				
-
+						</div>
     				</section>
 
-				</div>
+		</header>
 
-				<div id="block2" class="col-md-9">
-					<header>
-					<h1><span> Tiphaine</span> Lallier</h1> 
 
-  					<p><span id="focus">Développeuse </span> Web en formation</p>
+		<main>
+				<div class="content">
+
+					<div class="identity">
+
+						<h1><span class="name"> Tiphaine</span> Lallier</h1> 
+
+  							<p><span id="job_title"><span id="focus">Dével</span>oppeuse Web en formation</span></p>
 
   					
-        			</header>
+        			</div>
 
-        			<!--SECTION FORMATION-->
+        			<!--SECTION FORMATIONS-->
          				<section id="formations">
 
             				<div class="title">
 
-            					<p><span class="fas fa-graduation-cap"></span>
+            					<p><i class="fas fa-graduation-cap"></i>
 
                					</p>
 
-               						<h2>Formation</h2>
+               						<h2>Formations</h2>
 
             				</div>
 
@@ -102,11 +115,11 @@
 
                   					<div class="container_list">
 
-                     					<p class="dates">Juin 2019 - Aujourd'hui</p>
+                     					<span class="dates">Juin 2019 - Aujourd'hui</span>
 
-	                    					<div class="descr_list">
+	                    					<div class="description_list">
 
-                        						<div class="ou_quoi">
+                        						<div class="infos">
 
                            							<h3>Open Classrooms</h3>
 
@@ -114,9 +127,11 @@
 
                        							</div>
 
-                        							<p class="descr">
+                        							<p class="description">
 
-                           							La prep'web, labellisée Grande Ecole du Numérique, est une formation de six mois. Nous devons réaliser 4 projets qui sont ensuite évalués par un professionnel en vue d'obtenir une certification. Nous pouvons poursuivre avec la formation de développeur web junior en alternance.
+                           							Formation de six mois, labellisée Grande Ecole du Numérique. Durant cette période nous devons réaliser quatre projets. Une fois validés par un professionnel nous obtenons une certification. Nous avons ensuite la possibilité de poursuivre avec la formation de développeur web junior en alternance.<br />
+                           							Compétences acquises: HTML5, CSS3. 
+
 
                         							</p>
 
@@ -132,11 +147,11 @@
 
                   					<div class="container_list">
 
-                     					<p class="dates">2007</p>
+                     					<span class="dates">2007</span>
 
-	                    					<div class="descr_list">
+	                    					<div class="description_list">
 
-                        						<div class="ou_quoi">
+                        						<div class="infos">
 
                            							<h3>Lycée Maryse Bastié, Hayange (57)</h3>
 
@@ -144,7 +159,7 @@
 
                        							</div>
 
-                        							<p class="descr">
+                        							<p class="description">
 
                            							CAP Couture Floue: prêt à porter homme, femme et enfant.
 
@@ -161,11 +176,11 @@
 
                   					<div class="container_list">
 
-                     					<p class="dates">2002</p>
+                     					<span class="dates">2002</span>
 
-	                    					<div class="descr_list">
+	                    					<div class="description_list">
 
-                        						<div class="ou_quoi">
+                        						<div class="infos">
 
                            							<h3>Lycée Georges de la Tour, Metz (57)</h3>
 
@@ -173,7 +188,7 @@
 
                        							</div>
 
-                        							<p class="descr">
+                        							<p class="description">
 
                            							Baccalauréat littéraire, option anglais renforcé.
 
@@ -190,12 +205,12 @@
         				 </section>
 
 
-        			 <!--SECTION EXPERIENCE PROFESSIONNELLE-->
+        			 <!--SECTION EXPERIENCES PROFESSIONNELLES-->
         				<section id="exp_pro">
 
             				<div class="title">
 
-               					<p><span class="fas fa-briefcase"></span>
+               					<p><i class="fas fa-briefcase"></i>
 
                  				</p>
 
@@ -203,7 +218,7 @@
 
             				</div>	
 
-          					<div class="container_list">
+          					
 
 								<ul>
 
@@ -211,11 +226,11 @@
 
                   						<div class="container_list">
 
-                     						<p class="dates">2012 à aujourd'hui</p>
+                     						<span class="dates">2012 à aujourd'hui</span>
 
-                     							<div class="descr_list">
+                     							<div class="description_list">
 
-                        							<div class="ou_quoi">
+                        							<div class="infos">
 
                            								<h3>Absinthe Obsession</h3>
 
@@ -223,7 +238,7 @@
 
 													</div>
 
-                              							<p class="descr">
+                              							<p class="description">
 
                            								Couturière, en Micro-entreprise, à Flévy (57).
 
@@ -239,11 +254,11 @@
 
                   						<div class="container_list">
 
-                     						<p class="dates">2012-2013</p>
+                     						<span class="dates">2012-2013</span>
 
-												<div class="descr_list">
+												<div class="description_list">
 
-                        							<div class="ou_quoi">
+                        							<div class="infos">
 
                            								<h3>CIAS</h3>
 
@@ -251,7 +266,7 @@
 
                         							</div>
 
-                        								<p class="descr">
+                        								<p class="description">
 
                            								Service cantine péri-scolaire, plonge, entretien du bâtiment, à Trémery (57).
 
@@ -268,11 +283,11 @@
 
                   						<div class="container_list">
 
-                     						<p class="dates">2011</p>
+                     						<span class="dates">2011</span>
                         
-												<div class="descr_list">
+												<div class="description_list">
 
-                        							<div class="ou_quoi">
+                        							<div class="infos">
 
                            								<h3>Mairie/ Ecole primaire</h3>
 
@@ -280,7 +295,7 @@
 
                       								</div>
 
-                        								<p class="descr">
+                        								<p class="description">
 
                            								Entretien des bâtiment, salles de classes à Flévy (57).
 
@@ -296,11 +311,11 @@
 
                   						<div class="container_list">
 
-                     						<p class="dates">2010-2011</p>
+                     						<span class="dates">2010-2011</span>
                         
-												<div class="descr_list">
+												<div class="description_list">
 
-                        							<div class="ou_quoi">
+                        							<div class="infos">
 
                            								<h3>Coopérative d’activités Cap’ Entreprendre</h3>
 
@@ -308,7 +323,7 @@
 
                       								</div>
 
-                        								<p class="descr">
+                        								<p class="description">
 
                            								Pépinière d'entreprises, Forbach (57).
 
@@ -324,11 +339,11 @@
 
                   						<div class="container_list">
 
-                     						<p class="dates">2009</p>
+                     						<span class="dates">2009</span>
                         
-												<div class="descr_list">
+												<div class="description_list">
 
-                        							<div class="ou_quoi">
+                        							<div class="infos">
 
                            								<h3>Théâtre de la Seille</h3>
 
@@ -336,37 +351,9 @@
 
                       								</div>
 
-                        								<p class="descr">
+                        								<p class="description">
 
                            								Confection, entretien des costumes de scène, Metz- Borny (57).
-
-                        								</p>
-
-                     							</div>
-
-                  						</div>
-
-               						</li>
-
-               						<li>
-
-                  						<div class="container_list">
-
-                     						<p class="dates">2007-2008</p>
-                        
-												<div class="descr_list">
-
-                        							<div class="ou_quoi">
-
-                           								<h3>Dextre Primo</h3>
-
-	                        								 <p>Mission intérim</p>
-
-                      								</div>
-
-                        								<p class="descr">
-
-                           								Magasinière, Caterpillar logistics (intérimaire), Flévy (57).
 
                         								</p>
 
@@ -386,30 +373,28 @@
 					<!-- Recommandations -->
 						<div class="title">
    								
-							<p><span class="fas fa-pen"></span> 
+							<p><i class="fas fa-pen"></i> 
 							</p>
 
 							<h2>Recommandation</h2>
 
 						</div>
 
-   							<p>CLARA CORAZZA</br>
-   								Head of Code & Design, OpenClassrooms</br>
-   								Mentor de formation.
+   							<p><h3>CLARA CORAZZA</h3></br>
+							Head of Code&Design, Openclassrooms<br />
+							Téléphone: 01 80 88 80 31<br />
+							Email: clara.corazza@openclassrooms.com
    							</p>
 
    							
 
    					
-   						</div>
+   						
                     </section>
 
+                </div>
 
-				</div>
-
-			
-
-		</div>
+        </main>
 
 	</body>
 
