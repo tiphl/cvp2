@@ -159,9 +159,9 @@ header
 
 header h2 
 {
-  background-color: #880E4F;
+  background-color: #7E57C2;
   text-align: center;
-  color: #341327;
+  color: black;
 }
 
 /*Photo d'identité*/
@@ -234,6 +234,11 @@ partie de droite */
 #focus
 {
   border-bottom: 2px solid #5a3f4f;
+}
+
+.name_id
+{
+  color: #424242;
 }
 
 #job_title
